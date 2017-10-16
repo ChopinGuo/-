@@ -1,0 +1,30 @@
+https://www.zhihu.com/question/47976241
+
+作者：天天天蓝链接：https://www.zhihu.com/question/47976241/answer/108612311来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+有关Nonlinear observer的专著不是很多，我手里有三本。
+第一本是H Nijmeijer和TI Fossen主编的New directions in nonlinear observer design，出版时间距今近20年了。
+Nijmeijer主要是理论研究，Fossen则是应用出身，这本书内容比较全，每章是相应小方向的学者完成的，比如适合初学，内容相对陈旧但也很经典。
+第二本是Gildas Besancon主编的Nonlinear Observers and Application，内容是07年法国一个有关观测器的暑期学校讲义整理而成的。
+部分章节加入了第一本书后十年里的最新进展，不过包含的领域没有第一本全面。
+第三本JP Gauthier和I Kupka编著的Determinstic observation theory and applications，这本起点高一些，从能观性讲起，
+数学工具上Lie代数和微分几何用的比较多，有关观测器设计的部分只介绍了high-gain observer相关结果。
+
+有关非线性观测器的经典论文比较多，
+2000年以前非线性系统领域的大牛们大都涉足过非线性观测器，
+2000年以后感觉是欧洲学派，特别是法国在主导非线性观测器的研究，可以自己到Google上搜一下相关的论文。
+
+有关该领域近期的进展，
+可以看一下L Praly在2011年IFAC大会上一小时的报告On observers, a meeting ofmany view points and applications，演讲的slides和视频网站上都可以搜到的。
+
+------------------------------------------------------------------
+
+最近读文献，补充几篇观测器领域里程碑式的论文。
+Luenberger D G. Observing the State of a Linear System[J]. IEEE Transactions on Military Electronics, 1964, 8(2):74-80.  （提出了observer的概念和思想）
+Zeitz M. The extended Luenberger observer for nonlinear systems[J]. Systems & Control Letters, 1987, 9(2):149-156.  （类比EKF提出的，局部线性化的思路）
+Krener A J, Isidori A. Linearization by output injection and nonlinear observers[J]. Systems & Control Letters, 1983, 3(1):47-52.  （非线性坐标变化，变成类似于线性系统+输出的injection）
+Kazantzis N, Kravaris C. Nonlinear observer design using Lyapunov's auxiliary theorem[J]. Systems & Control Letters, 1998, 34(5):241-247.  （奠基之作，比上面的坐标变换要求弱很多，文献里常称为Kazantzis-Kravaris/Luenberger Observer，可以说是真正意义上的非线性Luenberger观测器）
+Andrieu V, Praly L. On the Existence of a Kazantzis--Kravaris/Luenberger Observer[J]. SIAM Journal on Control and Optimization, 2006, 45(2):432-456.  （关于上一篇存在性的系统完善）
+Karagiannis D, Carnevale D, Astolfi A. Invariant Manifold Based Reduced-Order Observer Design for Nonlinear Systems[J]. Automatic Control IEEE Transactions on, 2008, 53(11):2602-2614.   （I&I观测器，出现PI结构）
+Doyle J C, Stein G. Robustness with observers[J]. IEEE Transactions on Automatic Control, 1979, 24(4):607-611.    （高增益观测器，现在研究最广泛）
+Andrieu V, Praly L. A unifying point of view on output feedback designs for global asymptotic stabilization[J]. Automatica, 2009, 45(8):1789-1798.  （全局输出反馈的综述，Automatica最佳论文奖）
